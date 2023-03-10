@@ -59,6 +59,8 @@ static screens_t get_screen(const ethQueryContractUI_t *msg, const artblock_para
             return amount_screen(index);
         case PURCHASE_TO:
             return address_to_screen(index);
+        case CREATE_BID:
+            return amount_screen(index);
     }
 }
 
