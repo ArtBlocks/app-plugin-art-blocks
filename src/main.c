@@ -30,6 +30,9 @@ static const uint8_t PURCHASE_SELECTOR[SELECTOR_SIZE] = {0xef, 0xef, 0x39, 0xa1}
 // Function: purchaseTo
 // Selector: 0x891407c0
 static const uint8_t PURCHASE_TO_SELECTOR[SELECTOR_SIZE] = {0x89, 0x14, 0x07, 0xc0};
+// Function: createBid
+// Selector: 659dd2b4
+static const uint8_t CREATE_BID_SELECTOR[SELECTOR_SIZE] = {0x65, 0x9d, 0xd2, 0xb4};
 
 // Plugin uses 0x00000 as a dummy address to reprecent ETH.
 const uint8_t NULL_ETH_ADDRESS[ADDRESS_LENGTH] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -40,6 +43,7 @@ const uint8_t NULL_ETH_ADDRESS[ADDRESS_LENGTH] = {0x00, 0x00, 0x00, 0x00, 0x00, 
 const uint8_t *const ART_BLOCKS_SELECTORS[NUM_SELECTORS] = {
     PURCHASE_SELECTOR,
     PURCHASE_TO_SELECTOR,
+    CREATE_BID_SELECTOR,
 };
 
 // Function to dispatch calls from the ethereum app.

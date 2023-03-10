@@ -33,6 +33,8 @@ void handle_provide_parameter(void *parameters) {
         case PURCHASE_TO:
             handle_purchase_to(msg, context);
             break;
+        case CREATE_BID:
+            break;
         default:
             PRINTF("Selector Index not supported: %d\n", context->selectorIndex);
             msg->result = ETH_PLUGIN_RESULT_ERROR;

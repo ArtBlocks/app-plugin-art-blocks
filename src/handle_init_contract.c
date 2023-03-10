@@ -38,6 +38,8 @@ void handle_init_contract(void *parameters) {
         case PURCHASE_TO:
             context->next_param = ADDRESS_TO;
             break;
+        case CREATE_BID:
+            break;
         default:
             PRINTF("Missing selectorIndex: %d\n", context->selectorIndex);
             msg->result = ETH_PLUGIN_RESULT_ERROR;

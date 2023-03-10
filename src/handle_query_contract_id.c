@@ -13,6 +13,9 @@ void handle_query_contract_id(void *parameters) {
         case PURCHASE_TO:
             strlcpy(msg->version, "Purchase to", msg->versionLength);
             break;
+        case CREATE_BID:
+            strlcpy(msg->version, "Create bid", msg->versionLength);
+            break;
         default:
             PRINTF("Selector index: %d not supported\n", context->selectorIndex);
             msg->result = ETH_PLUGIN_RESULT_ERROR;
