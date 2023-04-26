@@ -35,13 +35,11 @@ void handle_init_contract(void *parameters) {
     switch (context->selectorIndex) {
         case PURCHASE:
             break;
-        case PURCHASE_TO:
-            context->next_param = ADDRESS_TO;
-            break;
         case PURCHASE_HOLDER:
-            context->next_param = ADDRESS_TO;
             break;
         case PURCHASE_MERKLE:
+            break;
+        case PURCHASE_TO:
             context->next_param = ADDRESS_TO;
             break;
         case PURCHASE_TO_HOLDER:

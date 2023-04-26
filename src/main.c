@@ -27,9 +27,14 @@
 // Function: purchase
 // Selector: 0xefef39a1
 static const uint8_t PURCHASE_SELECTOR[SELECTOR_SIZE] = {0xef, 0xef, 0x39, 0xa1};
+static const uint8_t PURCHASE_HOLDER_SELECTOR[SELECTOR_SIZE] = {0x65, 0x0e, 0x5d, 0x6d};
+static const uint8_t PURCHASE_MERKLE_SELECTOR[SELECTOR_SIZE] = {0xda, 0x7e, 0x7c, 0x50};
 // Function: purchaseTo
 // Selector: 0x891407c0
 static const uint8_t PURCHASE_TO_SELECTOR[SELECTOR_SIZE] = {0x89, 0x14, 0x07, 0xc0};
+
+static const uint8_t PURCHASE_TO_HOLDER_SELECTOR[SELECTOR_SIZE] = {0xb0, 0x0a, 0xbb, 0x64};
+static const uint8_t PURCHASE_TO_MERKLE_SELECTOR[SELECTOR_SIZE] = {0x20, 0x2c, 0x58, 0x05};
 
 // Plugin uses 0x00000 as a dummy address to reprecent ETH.
 const uint8_t NULL_ETH_ADDRESS[ADDRESS_LENGTH] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -39,7 +44,11 @@ const uint8_t NULL_ETH_ADDRESS[ADDRESS_LENGTH] = {0x00, 0x00, 0x00, 0x00, 0x00, 
 // Array of all the different nft selectors.
 const uint8_t *const ART_BLOCKS_SELECTORS[NUM_SELECTORS] = {
     PURCHASE_SELECTOR,
+    PURCHASE_HOLDER_SELECTOR,
+    PURCHASE_MERKLE_SELECTOR,
     PURCHASE_TO_SELECTOR,
+    PURCHASE_TO_HOLDER_SELECTOR,
+    PURCHASE_TO_MERKLE_SELECTOR,
 };
 
 // Function to dispatch calls from the ethereum app.

@@ -4,7 +4,7 @@
 #include "eth_internals.h"
 #include "eth_plugin_interface.h"
 
-#define NUM_SELECTORS    4
+#define NUM_SELECTORS    6
 #define PLUGIN_NAME      "ArtBlocks"
 #define SELECTOR_SIZE    4
 #define PARAMETER_LENGTH 32

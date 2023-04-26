@@ -9,19 +9,19 @@ void handle_finalize(void *parameters) {
             msg->numScreens = 1;
             break;
         case PURCHASE_HOLDER:
-            msg->numScreens = 2;
+            msg->numScreens = 1;
             break;
         case PURCHASE_MERKLE:
-            msg->numScreens = 2;
+            msg->numScreens = 1;
             break;
         case PURCHASE_TO:
             msg->numScreens = 2;
             break;
         case PURCHASE_TO_HOLDER:
-            msg->numScreens = 3;
+            msg->numScreens = 2;
             break;
         case PURCHASE_TO_MERKLE:
-            msg->numScreens = 3;
+            msg->numScreens = 2;
             break;
     }
     msg->result = ETH_PLUGIN_RESULT_OK;
