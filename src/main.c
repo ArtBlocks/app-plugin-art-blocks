@@ -32,7 +32,6 @@ static const uint8_t PURCHASE_MERKLE_SELECTOR[SELECTOR_SIZE] = {0xda, 0x7e, 0x7c
 // Function: purchaseTo
 // Selector: 0x891407c0
 static const uint8_t PURCHASE_TO_SELECTOR[SELECTOR_SIZE] = {0x89, 0x14, 0x07, 0xc0};
-
 static const uint8_t PURCHASE_TO_HOLDER_SELECTOR[SELECTOR_SIZE] = {0xb0, 0x0a, 0xbb, 0x64};
 static const uint8_t PURCHASE_TO_MERKLE_SELECTOR[SELECTOR_SIZE] = {0x20, 0x2c, 0x58, 0x05};
 
