@@ -30,7 +30,17 @@ void handle_provide_parameter(void *parameters) {
     switch (context->selectorIndex) {
         case PURCHASE:
             break;
+        case PURCHASE_HOLDER:
+            break;
+        case PURCHASE_MERKLE:
+            break;
         case PURCHASE_TO:
+            handle_purchase_to(msg, context);
+            break;
+        case PURCHASE_TO_HOLDER:
+            handle_purchase_to(msg, context);
+            break;
+        case PURCHASE_TO_MERKLE:
             handle_purchase_to(msg, context);
             break;
         default:

@@ -4,7 +4,7 @@
 #include "eth_internals.h"
 #include "eth_plugin_interface.h"
 
-#define NUM_SELECTORS    2
+#define NUM_SELECTORS    4
 #define PLUGIN_NAME      "ArtBlocks"
 #define SELECTOR_SIZE    4
 #define PARAMETER_LENGTH 32
@@ -16,7 +16,11 @@ extern const uint8_t NULL_ETH_ADDRESS[ADDRESS_LENGTH];
 #define ADDRESS_IS_NETWORK_TOKEN(_addr) (!memcmp(_addr, NULL_ETH_ADDRESS, ADDRESS_LENGTH))
 typedef enum {
     PURCHASE,
+    PURCHASE_HOLDER,
+    PURCHASE_MERKLE,
     PURCHASE_TO,
+    PURCHASE_TO_HOLDER,
+    PURCHASE_TO_MERKLE,
 } selector_t;
 
 // Enumeration used to parse the smart contract data.
