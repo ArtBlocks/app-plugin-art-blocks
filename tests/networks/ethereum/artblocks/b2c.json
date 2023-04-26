@@ -70,12 +70,12 @@
             "address": "0x27f79cb37b08e4c2ff56db0f69ae875d4f5a6311",
             "contractName": "MinterHolderV4",
             "selectors": {
-                "0x891407c0": {
+                "0xb00abb64": {
                     "erc20OfInterest": [],
                     "method": "purchaseTo",
                     "plugin": "ArtBlocks"
                 },
-                "0xefef39a1": {
+                "0x650e5d6d": {
                     "erc20OfInterest": [],
                     "method": "purchase",
                     "plugin": "ArtBlocks"
@@ -102,12 +102,12 @@
             "address": "0x407a746dad6a18ec6c4bb4028bb54c74366ccce3",
             "contractName": "MinterPolyptychV0",
             "selectors": {
-                "0x891407c0": {
+                "0xb00abb64": {
                     "erc20OfInterest": [],
                     "method": "purchaseTo",
                     "plugin": "ArtBlocks"
                 },
-                "0xefef39a1": {
+                "0x650e5d6d": {
                     "erc20OfInterest": [],
                     "method": "purchase",
                     "plugin": "ArtBlocks"
@@ -150,12 +150,12 @@
             "address": "0x4610db225d7305e31690658d674e7d37eb244f7e",
             "contractName": "MinterMerkleV5",
             "selectors": {
-                "0x891407c0": {
+                "0x202c5805": {
                     "erc20OfInterest": [],
                     "method": "purchaseTo",
                     "plugin": "ArtBlocks"
                 },
-                "0xefef39a1": {
+                "0xda7e7c50": {
                     "erc20OfInterest": [],
                     "method": "purchase",
                     "plugin": "ArtBlocks"
@@ -198,12 +198,12 @@
             "address": "0x5f3562610dede0120087ec20bb61cf4a66124416",
             "contractName": "MinterMerkleV5",
             "selectors": {
-                "0x891407c0": {
+                "0x202c5805": {
                     "erc20OfInterest": [],
                     "method": "purchaseTo",
                     "plugin": "ArtBlocks"
                 },
-                "0xefef39a1": {
+                "0xda7e7c50": {
                     "erc20OfInterest": [],
                     "method": "purchase",
                     "plugin": "ArtBlocks"
@@ -246,12 +246,12 @@
             "address": "0x69326faf88ed5b423a7fc4063fc814bfb451fed6",
             "contractName": "MinterHolderV4",
             "selectors": {
-                "0x891407c0": {
+                "0xb00abb64": {
                     "erc20OfInterest": [],
                     "method": "purchaseTo",
                     "plugin": "ArtBlocks"
                 },
-                "0xefef39a1": {
+                "0x650e5d6d": {
                     "erc20OfInterest": [],
                     "method": "purchase",
                     "plugin": "ArtBlocks"
@@ -342,12 +342,12 @@
             "address": "0xb8bd1d2836c466db149f665f777928bee267304d",
             "contractName": "MinterMerkleV5",
             "selectors": {
-                "0x891407c0": {
+                "0x202c5805": {
                     "erc20OfInterest": [],
                     "method": "purchaseTo",
                     "plugin": "ArtBlocks"
                 },
-                "0xefef39a1": {
+                "0xda7e7c50": {
                     "erc20OfInterest": [],
                     "method": "purchase",
                     "plugin": "ArtBlocks"
@@ -358,12 +358,12 @@
             "address": "0xccff562017bdaaa064184b3eb9bd892d8acce7d6",
             "contractName": "MinterHolderV4",
             "selectors": {
-                "0x891407c0": {
+                "0xb00abb64": {
                     "erc20OfInterest": [],
                     "method": "purchaseTo",
                     "plugin": "ArtBlocks"
                 },
-                "0xefef39a1": {
+                "0x650e5d6d": {
                     "erc20OfInterest": [],
                     "method": "purchase",
                     "plugin": "ArtBlocks"
