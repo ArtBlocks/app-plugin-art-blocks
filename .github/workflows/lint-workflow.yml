@@ -7,7 +7,6 @@ on:
       - main
       - master
       - develop
-      - sb/add-additional-abis
   pull_request:
 
 jobs:
