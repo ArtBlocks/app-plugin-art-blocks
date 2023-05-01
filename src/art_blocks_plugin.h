@@ -32,11 +32,16 @@ typedef enum {
 typedef enum {
     AMOUNT_SCREEN,
     ADDRESS_TO_SCREEN,
+    ADDRESS_HOLDER_SCREEN,
+    TOKEN_ID_HOLDER_SCREEN,
     ERROR,
 } screens_t;
 
 #define ADDRESS_TO 0
-#define NONE       1
+#define ADDRESS_HOLDER 1
+#define TOKEN_ID_HOLDER 2
+#define MERKLE_PROOF 3
+#define NONE       4
 
 extern const uint8_t *const ART_BLOCKS_SELECTORS[NUM_SELECTORS];
 
@@ -46,6 +51,9 @@ typedef struct artblocks_parameters_t {
     uint8_t address_to[ADDRESS_LENGTH];
     uint8_t contract_address_sent[ADDRESS_LENGTH];
     char ticker_sent[MAX_TICKER_LEN];
+    uint8_t merkle_proof[ADDRESS_LENGTH];
+    uint8_t owned_nft_address[ADDRESS_LENGTH];
+    uint32_t owned_nft_id;
 
     // For parsing data.
     uint8_t next_param;

@@ -36,8 +36,9 @@ void handle_init_contract(void *parameters) {
         case PURCHASE:
             break;
         case PURCHASE_HOLDER:
-            break;
+            context->next_param = ADDRESS_HOLDER;
         case PURCHASE_MERKLE:
+            context->next_param = MERKLE_PROOF;
             break;
         case PURCHASE_TO:
             context->next_param = ADDRESS_TO;
