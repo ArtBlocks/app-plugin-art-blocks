@@ -37,11 +37,11 @@ typedef enum {
     ERROR,
 } screens_t;
 
-#define ADDRESS_TO 0
-#define ADDRESS_HOLDER 1
+#define ADDRESS_TO      0
+#define ADDRESS_HOLDER  1
 #define TOKEN_ID_HOLDER 2
-#define MERKLE_PROOF 3
-#define NONE       4
+#define MERKLE_PROOF    3
+#define NONE            4
 
 extern const uint8_t *const ART_BLOCKS_SELECTORS[NUM_SELECTORS];
 

@@ -14,7 +14,8 @@ static void handle_merkle_proof(ethPluginProvideParameter_t *msg, artblock_param
     printf_hex_array("Merkle Proof: ", ADDRESS_LENGTH, context->merkle_proof);
 }
 
-static void handle_owned_nft_address(ethPluginProvideParameter_t *msg, artblock_parameters_t *context) {
+static void handle_owned_nft_address(ethPluginProvideParameter_t *msg,
+                                     artblock_parameters_t *context) {
     memset(context->owned_nft_address, 0, sizeof(context->address_to));
     memcpy(context->owned_nft_address,
            &msg->parameter[PARAMETER_LENGTH - ADDRESS_LENGTH],
@@ -22,8 +23,7 @@ static void handle_owned_nft_address(ethPluginProvideParameter_t *msg, artblock_
     printf_hex_array("Owned NFT Contract: ", ADDRESS_LENGTH, context->owned_nft_address);
 }
 
-static void handle_owned_nft_id(ethPluginProvideParameter_t *msg,
-                                     artblock_parameters_t *context) {
+static void handle_owned_nft_id(ethPluginProvideParameter_t *msg, artblock_parameters_t *context) {
     memset(context->owned_nft_id, 0, sizeof(context->address_to));
     memcpy(context->owned_nft_id,
            &msg->parameter[PARAMETER_LENGTH - sizeof(context->address_to)],
