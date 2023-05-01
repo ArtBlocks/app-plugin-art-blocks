@@ -24,11 +24,11 @@ static void handle_owned_nft_address(ethPluginProvideParameter_t *msg,
 }
 
 static void handle_owned_nft_id(ethPluginProvideParameter_t *msg, artblock_parameters_t *context) {
-    memset(context->owned_nft_id, 0, sizeof(context->address_to));
+    memset(context->owned_nft_id, 0, sizeof(context->owned_nft_id));
     memcpy(context->owned_nft_id,
-           &msg->parameter[PARAMETER_LENGTH - sizeof(context->address_to)],
+           &msg->parameter[PARAMETER_LENGTH - sizeof(context->owned_nft_id)],
            sizeof(context->address_to));
-    printf_hex_array("Owned NFT ID: ", sizeof(context->address_to), context->owned_nft_id);
+    printf_hex_array("Owned NFT ID: ", sizeof(context->owned_nft_id), context->owned_nft_id);
 }
 
 static void handle_merkle_minter(ethPluginProvideParameter_t *msg, artblock_parameters_t *context) {
