@@ -51,7 +51,7 @@ typedef struct artblocks_parameters_t {
     uint8_t address_to[ADDRESS_LENGTH];
     uint8_t contract_address_sent[ADDRESS_LENGTH];
     char ticker_sent[MAX_TICKER_LEN];
-    uint8_t merkle_proof[ADDRESS_LENGTH];
+    uint8_t merkle_proof[PARAMETER_LENGTH];
     uint8_t owned_nft_address[ADDRESS_LENGTH];
     uint32_t owned_nft_id;
 
