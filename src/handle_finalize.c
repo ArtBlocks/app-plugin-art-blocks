@@ -8,8 +8,20 @@ void handle_finalize(void *parameters) {
         case PURCHASE:
             msg->numScreens = 1;
             break;
+        case PURCHASE_HOLDER:
+            msg->numScreens = 3;
+            break;
+        case PURCHASE_MERKLE:
+            msg->numScreens = 2;
+            break;
         case PURCHASE_TO:
             msg->numScreens = 2;
+            break;
+        case PURCHASE_TO_HOLDER:
+            msg->numScreens = 4;
+            break;
+        case PURCHASE_TO_MERKLE:
+            msg->numScreens = 3;
             break;
     }
     msg->result = ETH_PLUGIN_RESULT_OK;

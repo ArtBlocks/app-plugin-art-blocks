@@ -10,7 +10,19 @@ void handle_query_contract_id(void *parameters) {
         case PURCHASE:
             strlcpy(msg->version, "Purchase", msg->versionLength);
             break;
+        case PURCHASE_HOLDER:
+            strlcpy(msg->version, "Purchase", msg->versionLength);
+            break;
+        case PURCHASE_MERKLE:
+            strlcpy(msg->version, "Purchase", msg->versionLength);
+            break;
         case PURCHASE_TO:
+            strlcpy(msg->version, "Purchase to", msg->versionLength);
+            break;
+        case PURCHASE_TO_HOLDER:
+            strlcpy(msg->version, "Purchase to", msg->versionLength);
+            break;
+        case PURCHASE_TO_MERKLE:
             strlcpy(msg->version, "Purchase to", msg->versionLength);
             break;
         default:

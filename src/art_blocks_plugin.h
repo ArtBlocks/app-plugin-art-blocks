@@ -4,7 +4,7 @@
 #include "eth_internals.h"
 #include "eth_plugin_interface.h"
 
-#define NUM_SELECTORS    2
+#define NUM_SELECTORS    6
 #define PLUGIN_NAME      "ArtBlocks"
 #define SELECTOR_SIZE    4
 #define PARAMETER_LENGTH 32
@@ -16,7 +16,11 @@ extern const uint8_t NULL_ETH_ADDRESS[ADDRESS_LENGTH];
 #define ADDRESS_IS_NETWORK_TOKEN(_addr) (!memcmp(_addr, NULL_ETH_ADDRESS, ADDRESS_LENGTH))
 typedef enum {
     PURCHASE,
+    PURCHASE_HOLDER,
+    PURCHASE_MERKLE,
     PURCHASE_TO,
+    PURCHASE_TO_HOLDER,
+    PURCHASE_TO_MERKLE,
 } selector_t;
 
 // Enumeration used to parse the smart contract data.
@@ -28,11 +32,16 @@ typedef enum {
 typedef enum {
     AMOUNT_SCREEN,
     ADDRESS_TO_SCREEN,
+    ADDRESS_HOLDER_SCREEN,
+    TOKEN_ID_HOLDER_SCREEN,
     ERROR,
 } screens_t;
 
-#define ADDRESS_TO 0
-#define NONE       1
+#define ADDRESS_TO      0
+#define ADDRESS_HOLDER  1
+#define TOKEN_ID_HOLDER 2
+#define MERKLE_PROOF    3
+#define NONE            4
 
 extern const uint8_t *const ART_BLOCKS_SELECTORS[NUM_SELECTORS];
 
@@ -42,6 +51,9 @@ typedef struct artblocks_parameters_t {
     uint8_t address_to[ADDRESS_LENGTH];
     uint8_t contract_address_sent[ADDRESS_LENGTH];
     char ticker_sent[MAX_TICKER_LEN];
+    uint8_t merkle_proof[PARAMETER_LENGTH];
+    uint8_t owned_nft_address[ADDRESS_LENGTH];
+    uint32_t owned_nft_id;
 
     // For parsing data.
     uint8_t next_param;
